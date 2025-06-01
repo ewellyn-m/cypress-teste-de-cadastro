@@ -24,9 +24,9 @@ describe('Cadastro de Usuário', () => {
     cy.get('.subjects-auto-complete__value-container').type('Maths{enter}');
 
     // Hobbies
-    cy.get('[for="hobbies-checkbox-3"]').click(); // Sports
+    cy.get('[for="hobbies-checkbox-3"]').click();
 
-    // Upload de arquivo (coloque um arquivo de teste na raiz do projeto)
+    // Upload de arquivo
     cy.get('#uploadPicture').attachFile('foto.jpg');
 
     // Endereço
